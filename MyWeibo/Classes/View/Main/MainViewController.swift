@@ -27,13 +27,14 @@ class MainViewController: UITabBarController {
         tabBar.bringSubviewToFront(composedButton)
     }
     
-    private lazy var composedButton: UIButton = {
-        let buttom = UIButton()
-        buttom.setImage(UIImage(named: "feed_publish"), for: .normal)
-        buttom.setImage(UIImage(named: "feed_publish_press"), for: .highlighted)
-        buttom.sizeToFit()
-        return buttom
-    }()
+    private lazy var composedButton: UIButton = UIButton(imageName: "feed_publish")
+//    {
+//        let buttom = UIButton()
+//        buttom.setImage(UIImage(named: "feed_publish"), for: .normal)
+//        buttom.setImage(UIImage(named: "feed_publish_press"), for: .highlighted)
+//        buttom.sizeToFit()
+//        return buttom
+//    }()
 }
 
 

@@ -8,7 +8,13 @@
 import UIKit
 
 class MainViewController: UITabBarController {
+    // MARK: - 监听方法
+    /// 点击中间按钮
+    @objc private func clickComposeButton() {
+        debugPrint("www")
+    }
 
+    // MARK: - 视图生命周期函数
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,30 +33,29 @@ class MainViewController: UITabBarController {
         tabBar.bringSubviewToFront(composedButton)
     }
     
+    // MARK: - 懒加载控件
     private lazy var composedButton: UIButton = UIButton(imageName: "feed_publish")
-//    {
-//        let buttom = UIButton()
-//        buttom.setImage(UIImage(named: "feed_publish"), for: .normal)
-//        buttom.setImage(UIImage(named: "feed_publish_press"), for: .highlighted)
-//        buttom.sizeToFit()
-//        return buttom
-//    }()
 }
 
 
 // MARK: - 设置界面
 extension MainViewController {
+    
+    /// 设置tabBar中间按钮
     private func setupComposedButton() {
-        // 添加按钮
+        // 1.添加按钮
         tabBar.addSubview(composedButton)
-        // 调整按钮
+        // 2.调整按钮
         let count = children.count
         let w = tabBar.bounds.width / CGFloat(count)
         
         composedButton.frame = tabBar.bounds.insetBy(dx: w * 2, dy: 0)
+        
+        // 3.添加监听
+        composedButton.addTarget(self, action: #selector(clickComposeButton), for: .touchUpInside)
     }
     
-    // 添加所有控制器
+    /// 添加所有控制器
     private func addChilViewControllers() {
         tabBar.tintColor = UIColor.orange
         addChilViewController(HomeTableViewController(), title: "首页", imageName: "home_tabbar")

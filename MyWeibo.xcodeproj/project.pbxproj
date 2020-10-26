@@ -17,6 +17,8 @@
 		D40C30FB254688CF0055CDBD /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C30FA254688CF0055CDBD /* MessageTableViewController.swift */; };
 		D40C30FE254688D80055CDBD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C30FD254688D80055CDBD /* ProfileTableViewController.swift */; };
 		D40C31022546B07B0055CDBD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C31012546B07B0055CDBD /* UIButton+Extension.swift */; };
+		D40C31072546D09A0055CDBD /* VisitorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C31062546D09A0055CDBD /* VisitorTableViewController.swift */; };
+		D40C310B2546D3BE0055CDBD /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C310A2546D3BE0055CDBD /* VisitorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D40C30FA254688CF0055CDBD /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		D40C30FD254688D80055CDBD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		D40C31012546B07B0055CDBD /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D40C31062546D09A0055CDBD /* VisitorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTableViewController.swift; sourceTree = "<group>"; };
+		D40C310A2546D3BE0055CDBD /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		D40C30EC254687D40055CDBD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D40C31052546D0670055CDBD /* Visitor */,
 				D40C30F02546888B0055CDBD /* MainViewController.swift */,
 			);
 			path = Main;
@@ -165,6 +170,15 @@
 				D40C31012546B07B0055CDBD /* UIButton+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D40C31052546D0670055CDBD /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				D40C31062546D09A0055CDBD /* VisitorTableViewController.swift */,
+				D40C310A2546D3BE0055CDBD /* VisitorView.swift */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,8 @@
 				D40C30AE254674340055CDBD /* AppDelegate.swift in Sources */,
 				D40C30F8254688C40055CDBD /* DiscoverTableViewController.swift in Sources */,
 				D40C31022546B07B0055CDBD /* UIButton+Extension.swift in Sources */,
+				D40C31072546D09A0055CDBD /* VisitorTableViewController.swift in Sources */,
+				D40C310B2546D3BE0055CDBD /* VisitorView.swift in Sources */,
 				D40C30FB254688CF0055CDBD /* MessageTableViewController.swift in Sources */,
 				D40C30B0254674340055CDBD /* SceneDelegate.swift in Sources */,
 			);
